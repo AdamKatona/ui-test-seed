@@ -8,24 +8,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/szikszail/ui-test-seed.git"
+    "url": "git+https://github.com/AdamKatona/ui-test-seed.git"
   },
   "keywords": [
     "CucumberJS",
     "Selenium Webdriver"
   ],
   "author": "Laszlo Szikszai <laszlo_szikszai@epam.com>",
+  "contributors": [
+    {
+      "name" : "Adam Katona",
+      "email" : "Adam_Katona@epam.com"
+    }
+  ],
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/szikszail/ui-test-seed/issues"
+    "url": "https://github.com/AdamKatona/ui-test-seed/issues"
   },
-  "homepage": "https://github.com/szikszail/ui-test-seed#readme",
+  "homepage": "https://github.com/AdamKatona/ui-test-seed#readme",
   "dependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-each": "^0.0.1",
     "chai-sorted": "^0.2.0",
-    "chromedriver": "^78.0.1",
+    "chromedriver": "^86.0.0",
     "cucumber": "^6.0.4",
     "cucumber-pretty": "^6.0.0",
     "selenium-webdriver": "^3.6.0"
