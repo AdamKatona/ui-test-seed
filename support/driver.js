@@ -1,7 +1,7 @@
 require("chromedriver");
-const { Builder } = require("selenium-webdriver");
+const { Builder, By } = require("selenium-webdriver");
 
-let driver;
+let driver, by;
 
 global.startDriver = async () => {
     driver = await new Builder().forBrowser("chrome").build();
@@ -13,6 +13,19 @@ Object.defineProperty(global, "driver", {
             throw new Error("Initialize driver! await startDriver();")
         }
         return driver;
+    },
+    set() {
+        // noop
+    }
+});
+
+
+Object.defineProperty(global, "by", {
+    get() {
+        if (!by) {
+            by = By;
+        }
+        return by;
     },
     set() {
         // noop

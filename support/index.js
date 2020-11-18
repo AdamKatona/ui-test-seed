@@ -5,7 +5,6 @@ chai.use(cap);
 
 setDefaultTimeout(30e3);
 
-
 let expect;
 Object.defineProperty(global, "expect", {
     get() {
