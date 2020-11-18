@@ -4,7 +4,8 @@
   "description": "Template for UI test automation project, using CucumberJS and Selenium3",
   "main": "-",
   "scripts": {
-    "test": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js -f node_modules/cucumber-pretty --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\""
+    "test-local": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js -f node_modules/cucumber-pretty --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\"",
+    "test-report": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js -f node_modules/cucumber-pretty --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\" --publish"
   },
   "repository": {
     "type": "git",
