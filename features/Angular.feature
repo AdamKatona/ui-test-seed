@@ -4,5 +4,6 @@ Feature: Angular demo
   So I can show a nice demo, how automation basics work
 
   Scenario: 1. Name
-    When asdasd
-    Then asdasdsa
+    Given the Angular page is loaded
+
+    Then test
