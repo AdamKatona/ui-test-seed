@@ -15,6 +15,10 @@ When(/^the "([^"]+)" text is entered into the search bar$/, searchText => {
     return driver.findElement(by.css(selector)).sendKeys(searchText);
 });
 
+When(/^I wait for (\d+) seconds$/, secs => {
+    return driver.sleep(+secs*1000);
+});
+
 Then("test", () => expect(true).to.be.false);
 
 Then(/^the Angular logo should be visible$/, () => {
@@ -55,25 +59,6 @@ Then(/^the suggestion list should be displayed$/, () => {
     return expect(driver.findElement(by.css(srl)).isDisplayed()).to.eventually.be.true;
 });
 
-Then(/^the (API|CLI|Guide) section should have (\d+) results?$/, async (section, resultCount) => {
-    switch (section) {
-        case "API":
-            section = 1;
-            break;
-        case "CLI":
-            section = 2;
-            break;
-        case "Guide":
-            section = 3;
-            break;
-    }
-
-    const apiResults = `.search-area:nth-of-type(${section}) .search-result-item`;
-    const items = await driver.findElements(by.css(apiResults));
-    return expect(items.length).to.equal(resultCount);
-});
-
-Then(/^the (\d+)\. result\'s name in API section should be "([^"]+)"$/, (resultIndex, resultName) => {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+Then(/^the link with "([^"]+)" text should be present$/, async text => {
+    return expect(driver.findElement(by.linkText(text)).isDisplayed()).to.eventually.be.true;
 });
