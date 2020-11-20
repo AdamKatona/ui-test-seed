@@ -65,3 +65,4 @@ tmp
 node_modules
 applitools_results.json
 yarn.lock
+.vscode
