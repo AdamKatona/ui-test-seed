@@ -34,7 +34,7 @@
     "chai-each": "^0.0.1",
     "chai-sorted": "^0.2.0",
     "chromedriver": "^86.0.0",
-    "cucumber": "^6.0.4",
+    "cucumber": "^7.0.0-rc.0",
     "cucumber-pretty": "^6.0.0",
     "selenium-webdriver": "^3.6.0"
   }
