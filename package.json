@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js -f node_modules/cucumber-pretty --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\"",
     "test-local": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js -f node_modules/cucumber-pretty --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\"",
-    "test-report": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js -f node_modules/cucumber-pretty --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\" --publish"
+    "test-report": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\" --publish"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "chromedriver": "^86.0.0",
     "cucumber": "^6.0.4",
     "cucumber-pretty": "^6.0.0",
+    "fs": "0.0.1-security",
     "selenium-webdriver": "^3.6.0"
   }
 }
