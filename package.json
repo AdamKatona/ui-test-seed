@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js -f node_modules/cucumber-pretty --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\"",
     "test-local": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js -f node_modules/cucumber-pretty --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\"",
-    "test-report": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\" --publish"
+    "test-report": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\" --publish",
+    "test-report-current": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\" --publish --tags @current"
   },
   "repository": {
     "type": "git",

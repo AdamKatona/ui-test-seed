@@ -2,7 +2,8 @@ Feature: Angular demo
   As an AutoQA
   I want to check the Angular page
   So I can show a nice demo, how automation basics work
-  
+
+  @current
   Scenario: 1. The User should have access to Angular's main page
     Given the Angular page is loaded
 
