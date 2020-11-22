@@ -21,10 +21,10 @@ When(/^I wait for (\d+) seconds$/, secs => {
 
 Then("test", () => expect(true).to.be.false);
 
-Then(/^the Angular logo should be visible$/, () => {
+Then(/^the Angular logo should( not)? be visible$/, not => {
     const selector = ".hero-logo";
     const logoVisibility = driver.findElement(by.css(selector)).isDisplayed();
-    return expect(logoVisibility).to.eventually.equal(true);
+    return expect(logoVisibility).to.eventually.equal(!not);
 });
 
 Then(/^the "([^"]+)" text should be displayed on the home page$/, text => {

@@ -1,4 +1,4 @@
-const { setDefaultTimeout, setWorldConstructor, World } = require("cucumber");
+const { setDefaultTimeout } = require("cucumber");
 const chai = require('chai');
 const cap = require('chai-as-promised');
 chai.use(cap);
@@ -17,7 +17,3 @@ Object.defineProperty(global, "expect", {
         // Noop
     },
 });
-
-setWorldConstructor(function test() {
-
-})
