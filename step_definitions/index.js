@@ -1,9 +1,8 @@
 const { expect } = require("chai");
 const { Given, When, Then } = require("cucumber");
 
-Given(/^the Angular page is loaded$/, async () => {
-    await driver.get("https://angular.io")
-
+Given(/^the Angular page is loaded$/, () => {
+    return driver.get("https://angular.io");
 });
 
 When(/^the "([^"]+)" button is clicked$/, buttonName => {
